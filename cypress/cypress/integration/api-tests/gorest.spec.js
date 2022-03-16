@@ -7,7 +7,7 @@ import { faker } from '@faker-js/faker';
 
 
 
-describe('Go rest endpoints', () => {
+describe('Testing Go rest endpoints', () => {
     context('GET /users', () => {
         it('should return a list with all users', { apiDisplayRequest: true }, () => {
             cy

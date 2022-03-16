@@ -11,16 +11,16 @@ export class Register {
         const email = faker.internet.email();
         const telephone = faker.phone.phoneNumber();
         const password = faker.internet.password();
-        
-        cy.get('#input-firstname').type(name)
-        cy.get('#input-lastname').type(lastName)
-        cy.get('#input-email').type(email)
-        cy.get('#input-telephone').type(telephone)
-        cy.get('#input-password').type(password)
-        cy.get('#input-confirm').type(password)
-        cy.get('input[name="agree"]').click()
-        cy.get('input[type="submit"]').click()
-        cy.get('#content > h1').should("have.text",'Your Account Has Been Created!')
+
+        cy.get('#input-firstname').type(name);
+        cy.get('#input-lastname').type(lastName);
+        cy.get('#input-email').type(email);
+        cy.get('#input-telephone').type(telephone);
+        cy.get('#input-password').type(password);
+        cy.get('#input-confirm').type(password);
+        cy.get('input[name="agree"]').click();
+        cy.get('input[type="submit"]').click();
+        cy.get('#content > h1').should("have.text",'Your Account Has Been Created!');
         return this;
     }
 }
