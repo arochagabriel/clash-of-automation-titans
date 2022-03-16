@@ -24,4 +24,5 @@
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 import { validateSchema } from './validateSchema'
+import { faker } from '@faker-js/faker';
 Cypress.Commands.add('validateSchema', validateSchema)

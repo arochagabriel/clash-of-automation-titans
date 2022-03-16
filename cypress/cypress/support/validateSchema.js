@@ -1,20 +1,22 @@
-import Ajv from "ajv"
-const ajv = new Ajv({allErrors: true, verbose: true}) // options can be passed, e.g. {allErrors: true}
+import Ajv from "ajv";
+import { definitionsHelper } from "../schemas/schema-definitions";
 
-export const validateSchema = (getUsersSchema, body) => {
-    cy.fixture(getUsersSchema).then((schema) => {
-        const validate = ajv.compile(schema)
-        const valid = validate(body)
-        if (!valid) {
-            cy.log(validate.errors).then(() => {
-                throw new Error('Contract mismatched')
-            })
-        } else {
-            Cypress.log({
-                name: 'validateSchema',
-                displayName: 'schema',
-                message: `${getUsersSchema} matched!`
-            })
-        }
-    })
-}
+const getSchemaError = (getAjvError) => {
+  return cy.wrap(
+    `Field: ${getAjvError[0]["dataPath"]} is invalid. Cause: ${getAjvError[0]["message"]}`
+  );
+};
+
+export const validateSchema = (schema, response) => {
+  const ajv = new Ajv();
+  const validate = ajv.addSchema(definitionsHelper).compile(schema);
+  const valid = validate(response);
+
+  if (!valid) {
+    getSchemaError(validate.errors).then((schemaError) => {
+      throw new Error(schemaError);
+    });
+  } else {
+    cy.log("Schema validated!");
+  }
+};

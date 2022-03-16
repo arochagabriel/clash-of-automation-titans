@@ -10,6 +10,7 @@
   "license": "ISC",
   "devDependencies": {
     "@bahmutov/cy-api": "^2.1.2",
+    "@faker-js/faker": "^6.0.0",
     "ajv": "^8.10.0",
     "cypress": "^9.5.1"
   }

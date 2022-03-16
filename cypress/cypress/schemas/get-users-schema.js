@@ -1,4 +1,4 @@
-{
+export const getUsersSchema = {
     "type": "array",
     "items": [
       {
@@ -542,4 +542,4 @@
         ]
       }
     ]
-  }
+};
