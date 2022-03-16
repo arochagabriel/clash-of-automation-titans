@@ -28,7 +28,7 @@ describe('Go rest endpoints', () => {
      context('POST /users',()=>{
         it('should create a new user', { apiDisplayRequest: true }, () => {
             const email = faker.internet.email();
-            const fullName = faker.name.firstName() + ' ' +faker.name.lastName();;
+            const fullName = faker.name.firstName() + ' ' +faker.name.lastName();
             const gender = faker.name.gender(true);
             cy
            .api({
