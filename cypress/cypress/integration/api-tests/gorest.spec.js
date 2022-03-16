@@ -13,6 +13,7 @@ describe('Go rest endpoints', () => {
                     expect(response.body[0]).to.have.all.keys(
                         'id', 'name', 'email', 'gender', 'status'
                       )
+                      cy.validateSchema('getUsersSchema',response.body)
                 });
         });
     });

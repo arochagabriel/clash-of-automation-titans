@@ -23,3 +23,5 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+import { validateSchema } from './validateSchema'
+Cypress.Commands.add('validateSchema', validateSchema)
