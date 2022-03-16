@@ -28,8 +28,7 @@ describe('Go rest endpoints', () => {
      context('POST /users',()=>{
         it('should create a new user', { apiDisplayRequest: true }, () => {
             const email = faker.internet.email();
-            const name = faker.name.firstName();
-            const lastName = faker.name.lastName();
+            const fullName = faker.name.firstName() + ' ' +faker.name.lastName();;
             const gender = faker.name.gender(true);
             cy
            .api({
@@ -38,7 +37,7 @@ describe('Go rest endpoints', () => {
                 auth: token,
                 body: 
                 {
-                    name: name + ' '+ lastName,
+                    name: fullName,
                     gender: gender,
                     email: email,
                     status: "active"
@@ -46,6 +45,8 @@ describe('Go rest endpoints', () => {
                 })
                 .should((response)=>{
                     expect(response.status).to.eq(201)
+                    expect(response.body.name).to.equal(fullName)
+                    expect(response.body.email).to.equal(email)
                     cy.validateSchema(postUsersSchema,response.body)
                 });
             });
