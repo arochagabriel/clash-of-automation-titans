@@ -1,0 +1,41 @@
+{
+  "header": {
+    "wishList": "#wishlist-total"
+  },
+  "registerPage": {
+    "firstName": "#input-firstname",
+    "lastName": "#input-lastname",
+    "email": "#input-email",
+    "telephone": "#input-telephone",
+    "password": "#input-password",
+    "confirmPassword": "#input-confirm",
+    "checkPrivacyPolicy": "//input[@name='agree']",
+    "continueButton": ".btn-primary",
+    "confirmationText": "//div[@id='content']/h1"
+  },
+  "plp": {
+    "firstProduct": "div#content > div:nth-of-type(4) > div:nth-of-type(1) > div > div:nth-of-type(2) > div:nth-of-type(2) > button:nth-of-type(2)",
+    "secondProduct": "div#content > div:nth-of-type(4) > div:nth-of-type(2) > div > div:nth-of-type(2) > div:nth-of-type(2) > button:nth-of-type(2)"
+  },
+  "wishListPage": {
+    "firstItem": "div#content > div:nth-of-type(1) > table > tbody > tr:nth-of-type(1) > td:nth-of-type(2)",
+    "secondItem": "div#content > div:nth-of-type(1) > table > tbody > tr:nth-of-type(2) > td:nth-of-type(2)",
+    "removeFirstItem": "div#content > div:nth-of-type(1) > table > tbody > tr:nth-of-type(1) > td:nth-of-type(6) > a > i",
+    "emptyWishlistText": "div#content > p"
+  },
+  "homePage": {
+    "firstProduct": "div#content > div:nth-of-type(2) > div:nth-of-type(1) > div > div:nth-of-type(3) > button:nth-of-type(1)",
+    "secondProduct": "div#content > div:nth-of-type(2) > div:nth-of-type(2) > div > div:nth-of-type(3) > button:nth-of-type(1)",
+    "checkout":{
+      "button": "#cart-total",
+      "link": "{}Checkout"}
+  },
+  "checkoutPage": {
+    "firstItem": "table > tbody > tr:nth-of-type(1) > td:nth-of-type(6)",
+    "secondItem": "table > tbody > tr:nth-of-type(2) > td:nth-of-type(6)",
+    "totalCart": "table > tbody > tr:nth-of-type(4) > td:nth-of-type(2)",
+    "quantityFirstProduct": "tbody > tr:nth-of-type(1) > td:nth-of-type(4) > div > input",
+    "refreshFirstProductButton": "table > tbody > tr:nth-of-type(1) > td:nth-of-type(4) > div > span > button:nth-of-type(1)"
+
+  }
+}
