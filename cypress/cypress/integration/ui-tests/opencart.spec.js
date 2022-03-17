@@ -35,6 +35,7 @@ describe('Testing open cart website', () => {
     home.selectProducts();
     home.goToTheCheckout();
 
+    checkout.totalPriceValidation();
   });
 
 });
