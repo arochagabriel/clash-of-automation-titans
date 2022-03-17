@@ -9,6 +9,7 @@ export class Home{
     }
 
     goToTheCheckout(){
+        cy.wait(500)
         cy.get('#cart-total').click();
         cy.visit('https://demo.opencart.com/index.php?route=checkout/checkout');
     }
