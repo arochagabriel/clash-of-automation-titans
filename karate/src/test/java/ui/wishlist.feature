@@ -27,9 +27,9 @@ Feature: Wishlist
     #add two items to your account wish list
     * driver.url = 'https://demo.opencart.com/index.php?route=product/category&path=20'
     * waitFor(plp.firstProduct).click()
-    * delay(4000)
-    * click(plp.secondProduct)
     * delay(3000)
+    * click(plp.secondProduct)
+    * delay(2000)
 
     #Validate that the two items you selected are displayed in the wish list.
     * click(header.wishList)
@@ -40,7 +40,7 @@ Feature: Wishlist
 
     #Remove the two items from the wishlist.
     * click(wishListPage.removeFirstItem)
-    * delay(3000)
+    * delay(1500)
     * waitFor(wishListPage.removeFirstItem).click()
     * waitFor(wishListPage.emptyWishlistText)
     * match text(wishListPage.emptyWishlistText) == 'Your wish list is empty.'

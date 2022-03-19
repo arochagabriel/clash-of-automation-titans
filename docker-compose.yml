@@ -1,0 +1,38 @@
+version: '3.3'
+services:
+
+  karate_api_test:
+    image: gradle:7.3.3-jdk11
+    volumes:
+      - "./karate/.:/usr/src/test/"
+    working_dir: /usr/src/test
+    command: gradle test --tests ApiTestParallel -i
+
+  cypress_api_test:
+    image: cypress/included:6.2.1
+    volumes:
+      - "./cypress/.:/cypress/"
+    working_dir: /cypress
+    command: --spec "cypress/integration/api-tests/gorest.spec.js"
+  
+  karate_ui_test:
+    image: mrgabo/karate-gradle-chrome
+    ports:
+      - 9222:9222
+      - 5900:5900
+    volumes:
+      - "./karate/.:/usr/src/test/"
+    working_dir: /usr/src/test
+    environment:
+      - KARATE_SOCAT_START=true
+      - KARATE_CHROME_PORT=9223
+      - KARATE_WIDTH=1920
+      - KARATE_HEIGHT=1080
+
+  cypress_ui_test:
+    image: cypress/included:6.2.1
+    volumes:
+      - "./cypress/.:/cypress/"
+    working_dir: /cypress
+    command: --spec "cypress/integration/ui-tests/opencart.spec.js"
+  

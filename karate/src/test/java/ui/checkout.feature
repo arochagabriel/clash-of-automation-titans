@@ -9,13 +9,13 @@ Feature: Checkout
     #Add two items of your choice to the cart.
     * driver.url = 'https://demo.opencart.com/'
     * waitFor(homePage.firstProduct).click()
-    * delay(3000)
+    * delay(1500)
     * waitFor(homePage.secondProduct).click()
 
     #Proceed to checkout
     * click(homePage.checkout.button)
     * waitFor(homePage.checkout.link).click()
-    * delay(3000)
+    * delay(1500)
 
     #validate that the total price is equal to the sum of the two items added to the cart.
     * def item1 = text(checkoutPage.firstItem)
@@ -32,7 +32,7 @@ Feature: Checkout
 
     #hit the refresh button next to the quantity input to update the price
     * click(checkoutPage.refreshFirstProductButton)
-    * delay(3000)
+    * delay(1500)
 
     #Validate that the new total checkout price increased accordingly
     * def newSum = text(checkoutPage.totalCart)
