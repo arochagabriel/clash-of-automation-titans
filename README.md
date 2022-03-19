@@ -130,9 +130,16 @@ It consists in three rounds:
 
 ---
 # 🛑 Preparing the Ring 🛑
-- Let's the blue whale do its job.
-Install Docker -> [how to install Docker](https://docs.docker.com/desktop/mac/install/)
+Let's the blue whale do its job.
+  Let's install Docker -> [how to install Docker](https://docs.docker.com/desktop/mac/install/)  
   
-
+  "wait, wat da heck is docker?" -> read [this](https://docs.docker.com/get-started/overview/) 🤓 
+  
+   
+Having said that... let's begin...
+.  
+.   
+.  
+.  
 ## 1️⃣  - Round 1 - FIGHT! 🥊🥋🔥
     docker-compose up karate_api_test cypress_api_test
