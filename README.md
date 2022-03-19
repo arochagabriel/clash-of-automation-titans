@@ -122,6 +122,7 @@ It consists in three rounds:
 ---
   
 ## 3️⃣ - Round 3 - General overview
+
  - Setting up (How easy is to setup a project and execute) 
  - Code friendly (readilble, simplicity)
  - Comunity Support
