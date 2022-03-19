@@ -1,5 +1,5 @@
 
-# The Clash of Automation Titans!
+# The Clash of Automation Titans! 
 
 ![](https://media.giphy.com/media/jlqNypsVwYUsYIGIc0/giphy.gif)
 
@@ -63,7 +63,7 @@ Karate is the **only** open-source tool to combine **API test-automation, [mocks
 
 ![GitHub contributors](https://img.shields.io/github/contributors/karatelabs/karate?style=for-the-badge)
 
-# 😠🤜 Fight Rules! 🤛😠
+## 😠🤜 Fight Rules! 🤛😠
 
 It consists in three rounds:
 
@@ -71,11 +71,11 @@ It consists in three rounds:
 
 #### 2️⃣ - UI Testing 🔎 🕵
 
-#### 3️⃣ - Simplicity ✨
+#### 3️⃣ - General overview ✨
 
 ---
   
-# 1️⃣  - Round 1 - API Testing
+## 1️⃣  - Round 1 - API Testing
 
  **Target:** https://gorest.co.in  
  **Type of Api:** Restful.  
@@ -90,8 +90,9 @@ It consists in three rounds:
 
 - Reuse variables and/or file.
 
+---
   
-# 2️⃣  - Round 2 - UI Testing
+## 2️⃣  - Round 2 - UI Testing 
 
 **Target:** https://demo.opencart.com/  
 **Browser**: Google Chrome  
@@ -118,3 +119,10 @@ It consists in three rounds:
 
 - POM  / Elements interaction (waits, locators, actions,etc).
   
+---
+  
+## 3️⃣ - General overview
+ - Setting up (How easy is to setup a project and execute) 
+ - Code friendly (readilble, simplicity)
+ - Comunity Support
+ - Reports
