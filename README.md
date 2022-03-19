@@ -75,7 +75,7 @@ It consists in three rounds:
 
 ---
   
-## 1️⃣  - Round 1 - API Testing
+## 1️⃣  - Round 1 - API Testing {...} ✅
 
  **Target:** https://gorest.co.in  
  **Type of Api:** Restful.  
@@ -92,7 +92,7 @@ It consists in three rounds:
 
 ---
   
-## 2️⃣  - Round 2 - UI Testing 
+## 2️⃣  - Round 2 - UI Testing  🔎 🕵
 
 **Target:** https://demo.opencart.com/  
 **Browser**: Google Chrome  
@@ -121,9 +121,18 @@ It consists in three rounds:
   
 ---
   
-## 3️⃣ - Round 3 - General overview
+## 3️⃣ - Round 3 - General overview 📝 ✨
 
  - Setting up (How easy is to setup a project and execute) 
  - Code friendly (readilble, simplicity)
  - Comunity Support
  - Reports
+
+---
+# 🛑 Preparing the Ring 🛑
+- Let's the blue whale do its job.
+Install Docker -> [how to install Docker](https://docs.docker.com/desktop/mac/install/)
+  
+
+## 1️⃣  - Round 1 - FIGHT! 🥊🥋🔥
+    docker-compose up karate_api_test cypress_api_test

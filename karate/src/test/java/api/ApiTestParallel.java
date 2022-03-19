@@ -10,7 +10,7 @@ class ApiTestParallel {
 
     @Test
     void apiTestParallel() {
-        Results results = Runner.path("classpath:api").parallel(10);
+        Results results = Runner.path("classpath:api/go-rest.feature").parallel(10);
         assertEquals(0, results.getFailCount(), results.getErrorMessages());
 
     }
