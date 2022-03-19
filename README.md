@@ -129,7 +129,7 @@ It consists in three rounds:
  - Reports
 
 ---
-# 🛑 Preparing the Ring 🛑
+# 🛑 Preparing the Ring 🛑 🐳
 Let's the blue whale do its job.
   Let's install Docker -> [how to install Docker](https://docs.docker.com/desktop/mac/install/)  
   
