@@ -63,7 +63,7 @@ Karate is the **only** open-source tool to combine **API test-automation, [mocks
 
 ![GitHub contributors](https://img.shields.io/github/contributors/karatelabs/karate?style=for-the-badge)
 
-## 😠🤜 Fight Rules! 🤛😠
+# 😠🤜 Fight Rules! 🤛😠
 
 It consists in three rounds:
 
@@ -88,7 +88,7 @@ It consists in three rounds:
 
 - Schema validation.
 
-- Reuse variables and/or file.
+- Reusing variables and/or files.
 
 ---
   
@@ -129,17 +129,48 @@ It consists in three rounds:
  - Reports
 
 ---
-# 🛑 Preparing the Ring 🛑 🐳
-Let's the blue whale do its job.
-  Let's install Docker -> [how to install Docker](https://docs.docker.com/desktop/mac/install/)  
+# 🛑 Preparing the Ring 🛑 
+1) For **Karate** you must install:  
   
+	- Gradle >= 7.3.x  -> [how to install Gradle](https://gradle.org/install/#with-a-package-manager)    
+  
+2) For **Cypress** you must install:  
+  
+	- Node >= 14.16.0 -> [how to install Node](https://nodejs.org/es/download/)    
+  
+3) Clone the project:  
+    
+  		mkdir myFolder && cd myFolder
+ 		git clone git@github.com:arochagabriel/clash-of-automation-titans.git
+        cd clash-of-automation-titans
+  
+0) *Optional* 
+	- Docker -> [how to install Docker](https://docs.docker.com/desktop/mac/install/)  
   "wait, wat da heck is docker?" -> read [this](https://docs.docker.com/get-started/overview/) 🤓 
+
+	
   
    
-Having said that... let's begin...
+Having said that...  
+![](https://media.giphy.com/media/adikIKGu30u6A/giphy.gif)
 .  
 .   
 .  
 .  
-## 1️⃣  - Round 1 - FIGHT! 🥊🥋🔥
-    docker-compose up karate_api_test cypress_api_test
+## 1️⃣  - Round 1 - FIGHT! 🥊🥋🔥  
+- Karate punches  
+Placed in the *Karate* folder type  
+
+		cd karate && gradle test --tests ApiTestParallel -i
+
+- Cypress punches  
+Placed in the *Cypress* folder type  
+
+		npm run api-test
+
+- Wanna watch them punching eachother at the same time?  
+  Placed in the root of the project (clash-of-automation-titans) folder  
+
+		docker-compose up karate_api_test cypress_api_test
+		
+

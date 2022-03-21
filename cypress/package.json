@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npx cypress run --spec **/*.spec.js",
+    "api-test": "npx cypress run --spec **/gorest.spec.js",
+    "ui-test": "npx cypress run --spec **/opencart.spec.js",
     "cypress": "npx cypress open"
   },
   "author": "",
