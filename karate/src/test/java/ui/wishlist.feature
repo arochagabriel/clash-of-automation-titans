@@ -7,18 +7,18 @@ Feature: Wishlist
     # this creates a unique email id to avoid crash
     * def getUniqueID = function(){ return Math.random().toString(36).substr(2, 4)  + '' }
     * def randomId = getUniqueID()
-    * string email = 'automated.tests.'+randomId+'@fidelapi.com'
+    * string email = 'automated.tests.'+randomId+'@karatelabs.com'
 
   Scenario: Wishlist
     #create an account
     * driver.url = 'https://demo.opencart.com/index.php?route=account/register'
     * waitFor(registerPage.firstName).click()
-    * input(registerPage.firstName, 'Andre')
-    * input(registerPage.lastName, 'Elias')
+    * input(registerPage.firstName, 'Peter')
+    * input(registerPage.lastName, 'Thomas')
     * input(registerPage.email, email)
-    * input(registerPage.telephone, '945342222')
-    * input(registerPage.password, 'F!d3lApi')
-    * input(registerPage.confirmPassword, 'F!d3lApi')
+    * input(registerPage.telephone, '9887626251')
+    * input(registerPage.password, 'P@s$W0rd!')
+    * input(registerPage.confirmPassword, 'P@s$W0rd!')
     * click(registerPage.checkPrivacyPolicy)
     * click(registerPage.continueButton)
     * match text(registerPage.confirmationText) == 'Your Account Has Been Created!'

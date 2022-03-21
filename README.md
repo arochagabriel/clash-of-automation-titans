@@ -159,18 +159,33 @@ Having said that...
 .  
 ## 1️⃣  - Round 1 - FIGHT! 🥊🥋🔥  
 - 🔥 Karate punches 👊  
-Placed in the *Karate* folder type  
+Placed in the *Karate* folder type in your terminal
 
 		cd karate && gradle test --tests ApiTestParallel -i
 
 - 🔥 Cypress punches 👊   
-Placed in the *Cypress* folder type  
+Placed in the *Cypress* folder type in your terminal
 
 		npm run api-test
 
 - Wanna watch them punching eachother at the same time?  🤜🤛  
-  Placed in the root of the project (clash-of-automation-titans) folder  
+  Placed in the root of the project (clash-of-automation-titans) folder  and type in your terminal
 
 		docker-compose up karate_api_test cypress_api_test
 		
+
+## 2️⃣  - Round 2 - FIGHT! 🥊🥋🔥  
+- 🔥 Karate punches 👊  
+Placed in the *Karate* folder type  
+
+		cd karate && gradle test --tests UiTest -i
+
+- 🔥 Cypress punches 👊   
+Placed in the *Cypress* folder and type in your terminal
+
+		npm run cypress
+  
+	in the Cypress Dashboard select opencart.spec.js  
+	  	
+
 
