@@ -158,17 +158,17 @@ Having said that...
 .  
 .  
 ## 1️⃣  - Round 1 - FIGHT! 🥊🥋🔥  
-- Karate punches  
+- 🔥 Karate punches 👊  
 Placed in the *Karate* folder type  
 
 		cd karate && gradle test --tests ApiTestParallel -i
 
-- Cypress punches  
+- 🔥 Cypress punches 👊   
 Placed in the *Cypress* folder type  
 
 		npm run api-test
 
-- Wanna watch them punching eachother at the same time?  
+- Wanna watch them punching eachother at the same time?  🤜🤛  
   Placed in the root of the project (clash-of-automation-titans) folder  
 
 		docker-compose up karate_api_test cypress_api_test
