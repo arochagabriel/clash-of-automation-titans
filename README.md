@@ -166,7 +166,7 @@ Placed in the *Karate* folder type in your terminal
 - 🔥 Cypress punches 👊   
 Placed in the *Cypress* folder type in your terminal
 
-		npm run api-test
+		npm i && npm run api-test
 
 - Wanna watch them punching eachother at the same time?  🤜🤛  
   Placed in the root of the project (clash-of-automation-titans) folder  and type in your terminal
