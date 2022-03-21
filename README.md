@@ -185,7 +185,7 @@ Placed in the *Cypress* folder and type in your terminal
 
 		npm run cypress
   
-	in the Cypress Dashboard select opencart.spec.js  
+	in the Cypress Dashboard **select opencart.spec.js**  
 	  	
 
 
