@@ -229,7 +229,7 @@ In conclusion
 
 **It will depend on your project, team, resources, etc.**   
    
-If you did you like this post, Let's drink a coupe of coffee and talk about it -> [Here](https://www.buymeacoffee.com/mrgabo)   😃
+If did you like this post, Let's drink a couple of coffee and talk about it -> [Here](https://www.buymeacoffee.com/mrgabo)   😃
    
 Feel free to complement this project, adding your own flavor (Pull Request are Welcome!)   
 
