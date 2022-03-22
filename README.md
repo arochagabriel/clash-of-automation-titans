@@ -166,9 +166,9 @@ Placed in the *Karate* folder type in your terminal
 - 🔥 Cypress punches 👊   
 Placed in the *Cypress* folder type in your terminal
 
-		npm i && npm run api-test
+		cd cypress && npm i && npm run api-test
 
-- Wanna watch them punching eachother at the same time?  🤜🤛  
+- Wanna watch them punching each other at the same time?  🤜🤛  
   Placed in the root of the project (clash-of-automation-titans) folder  and type in your terminal
 
 		docker-compose up karate_api_test cypress_api_test
@@ -183,9 +183,54 @@ Placed in the *Karate* folder type
 - 🔥 Cypress punches 👊   
 Placed in the *Cypress* folder and type in your terminal
 
-		npm run cypress
+		cd cypress && npm run cypress
   
 	in the Cypress Dashboard **select opencart.spec.js**  
+
+## 3️⃣ - Round 3 - General overview 📝 ✨
+ - Setting up: _*Cypress*_ punchs first 👊 
+	 	
+	To evaluate this aspect I considered how quicky and easy could be to start a project and I must say that its _*Cypress*_. Immediately when you start a new cypress project you'll get a template with a full description even examples about how to start. Instead of Karate, where you'd need a little bit of knowledge in Java structure projects or the best of the cases using your favorite Ide
+  
+   
+ - Code friendly:  _*Karate*_ punchs in the face 👊   
+   
+     
+	
+   I've been using _*Karate*_ since 2018 and I have to say that I love how simple and readable is, based on Gherkin, you'll get a whole picture of what it's been tested, but further than that, this tool supports, is capable to do a bunch of things that other cant do still.
+
+   
+      
+	     
+ - Comunity Support: _*Cypress*_ punchs 👊 
+   
+   Well, not pretty much to say on this, like it's described above _*Cypress*_ leads this chapter. But one important thing to mention is that from Stackoverflow, if you have any doubt with some 'silly' things or complex situations the same _*Karate*_ creator answers your question. 
+
+ - Reports: _*Karate*_ punchs back 👊 
+   
+  From my perspective, from _*Karate*_ you have a great report not only based in Junit or html, but rich with details and simplicity that lets you have a full perspective, historical, tags, and other more stuff.
 	  	
+# The Results... 🤕🥴🥺😄 
 
+Both are great tools, however, I believe that even when both support API and UI testing, I think that they are good in terms of the main reason why they came out. 
 
+If you want to test API I suggest with no doubts: _*Karate*_, is simple, has an infinity of capabilities that is worthy, but please take a look at the documentation which its full description and is fully understandable.
+
+BUT, for UI I really suggest _*Cypress*_ due to the ridiculously way about how fast it is. My only "complain" with this tool it's that if you want to execute the tests in parallel (which is a very important feature in automation) you have to pay for the enterprise version. 
+
+In conclusion  
+.   
+.   
+.   
+.   
+   
+
+![](https://media.giphy.com/media/26Ffi42TZbsrwDwzu/giphy.gif)
+
+**It will depend on your project, team, resources, etc.**   
+   
+If you did you like this post, Let's drink a coupe of coffee and talk about it -> [Here](https://www.buymeacoffee.com/mrgabo)   😃
+   
+Feel free to complement this project, adding your own flavor (Pull Request are Welcome!)   
+
+Cheers! ✌ 😎
